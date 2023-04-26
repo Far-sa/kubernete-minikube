@@ -1,0 +1,31 @@
+echo -n <password> | base64
+
+kubectl get node
+kubectl get pod
+
+kubectl apply -f mongo-config.yaml
+kubectl apply -f mongo-secret.yaml
+
+kubectl apply -f mongo.yaml
+kubectl apply -f webapp.yaml
+
+kubectl get all
+
+kubectl get configmap
+kubectl get secret
+
+kubectl get --help
+
+kubectl describe service <serviceName>
+kubectl describe pod <podName>
+
+kubectl logs <podName>
+
+// Access the service
+kubectl get svc
+minikube ip
+kubectl get node -o wide
+
+
+
+
